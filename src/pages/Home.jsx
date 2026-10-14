@@ -9,6 +9,20 @@ export function Home() {
           Picxora AI
         </div>
       </nav>
+
+      <div className='hero'>
+        <span>What can I help with ?</span>
+        <div className='cate'>
+          <div className='upImg'>
+
+          </div>
+          <div className='genImg'>
+
+          </div>
+          <div className='chat'></div>
+
+        </div>
+      </div>
     </div>
   )
 }
