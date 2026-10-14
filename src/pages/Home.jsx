@@ -1,10 +1,14 @@
+// @ts-nocheck
 import React from 'react'
-
-function Home() {
-    
+import "../App.css"
+export function Home() {
   return (
     <div className="home">
-
+      <nav>
+        <div className='logo'>
+          Picxora AI
+        </div>
+      </nav>
     </div>
   )
 }
