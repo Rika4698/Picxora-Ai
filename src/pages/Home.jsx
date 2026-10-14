@@ -13,7 +13,7 @@ export function Home() {
       </nav>
 
       <div className='hero'>
-        <span>What can I help with ?</span>
+        <span id='tag'>What can I help with ?</span>
         <div className='cate'>
           <div className='upImg'>
          <RiImageAddLine/>

@@ -25,5 +25,28 @@ nav{
     flex-direction: column;
     flex-wrap: wrap;
     color: white;
-    
+    gap: 20px;
+}
+
+#tag{
+    font-size: 2vmax;
+}
+
+.cate{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.upImag, .genImg, .chat{
+    padding: 10px 20px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 19px;
+    border-radius: 30px;
 }
