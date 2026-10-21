@@ -26,6 +26,7 @@ nav{
     flex-wrap: wrap;
     color: white;
     gap: 20px;
+    padding: 10px 20px;
 }
 
 #tag{
@@ -37,6 +38,7 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 
 }
 
@@ -49,6 +51,7 @@ nav{
     gap: 10px;
     font-size: 19px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 .upImg svg{
@@ -67,4 +70,9 @@ nav{
     width: 25px;
     height: 25px;
     color: rgb(240, 155, 7);
+}
+
+
+.upImg:hover, .genImg:hover, .chat:hover{
+    background-color: rgb(240, 248, 255, 0.108);
 }
