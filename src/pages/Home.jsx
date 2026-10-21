@@ -23,9 +23,10 @@ export function Home() {
           <RiImageAiLine/>
           <span>Generate Image</span>
           </div>
-          <div className='chat'></div>
+          <div className='chat'>
             <MdChatBubbleOutline/>
             <span>Let's Chat</span>
+            </div>
         </div>
       </div>
     </div>

@@ -40,7 +40,7 @@ nav{
 
 }
 
-.upImag, .genImg, .chat{
+.upImg, .genImg, .chat{
     padding: 10px 20px;
     border: 2px solid white;
     display: flex;
@@ -49,4 +49,22 @@ nav{
     gap: 10px;
     font-size: 19px;
     border-radius: 30px;
+}
+
+.upImg svg{
+    width: 25px;
+    height: 25px;
+    color: rgb(7, 240, 11);
+}
+
+.genImg svg{
+    width: 25px;
+    height: 25px;
+    color: rgb(7, 236, 240);
+}
+
+.chat svg{
+    width: 25px;
+    height: 25px;
+    color: rgb(240, 155, 7);
 }
