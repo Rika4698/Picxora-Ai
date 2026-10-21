@@ -76,3 +76,9 @@ nav{
 .upImg:hover, .genImg:hover, .chat:hover{
     background-color: rgb(240, 248, 255, 0.108);
 }
+
+@media (max-width:500px) {
+    #tag{
+        font-size: 20px;
+    }
+}

@@ -3,6 +3,8 @@ import React from 'react'
 import "../App.css"
 import { RiImageAddLine, RiImageAiLine } from 'react-icons/ri'
 import { MdChatBubbleOutline } from 'react-icons/md'
+import { FiPlus } from 'react-icons/fi'
+import { FaArrowUpLong } from 'react-icons/fa6'
 export function Home() {
   return (
     <div className="home">
@@ -29,6 +31,19 @@ export function Home() {
             </div>
         </div>
       </div>
+
+      <form className='input-box'>
+
+        <button id='add'>
+         <FiPlus/>
+        </button>
+
+        <input type="text" placeholder='Ask Something...' />
+        <button id='submit'>
+        <FaArrowUpLong/>
+        </button>
+
+      </form>
     </div>
   )
 }
