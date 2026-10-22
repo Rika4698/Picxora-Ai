@@ -87,6 +87,15 @@ nav{
     gap: 20px;
 }
 
+#add, #submit{
+    width: 60px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
 @media (max-width:500px) {
     #tag{
         font-size: 20px;
