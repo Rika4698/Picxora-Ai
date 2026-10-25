@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { createContext } from 'react'
 
-function UserContext() {
+
+export const dataContext = createContext()
+
+function UserContext({children}) {
   return (
-    <div>UserContext</div>
+    <div>
+        <dataContext.Provider value={value}>
+            {children}
+        </dataContext.Provider>
+    </div>
   )
 }
 
