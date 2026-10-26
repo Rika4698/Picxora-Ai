@@ -9,6 +9,10 @@ import { dataContext } from '../context/UserContext'
 export function Home() {
 
   let {startRes, setStartRes} = useContext(dataContext);
+
+  async function handleSubmit (e){
+
+  }
   return (
     <div className="home">
       <nav>
@@ -35,7 +39,7 @@ export function Home() {
         </div>
       </div>
 
-      <form className='input-box' onC>
+      <form className='input-box' onSubmit={(e) => handleSubmit(e)}>
 
         <button id='add'>
          <FiPlus/>
