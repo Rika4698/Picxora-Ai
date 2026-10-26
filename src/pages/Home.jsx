@@ -1,11 +1,14 @@
 // @ts-nocheck
-import React from 'react'
+import React, { useContext } from 'react'
 import "../App.css"
 import { RiImageAddLine, RiImageAiLine } from 'react-icons/ri'
 import { MdChatBubbleOutline } from 'react-icons/md'
 import { FiPlus } from 'react-icons/fi'
 import { FaArrowUpLong } from 'react-icons/fa6'
+import { dataContext } from '../context/UserContext'
 export function Home() {
+
+  let {startRes, setStartRes} = useContext(dataContext);
   return (
     <div className="home">
       <nav>
@@ -32,7 +35,7 @@ export function Home() {
         </div>
       </div>
 
-      <form className='input-box'>
+      <form className='input-box' onC>
 
         <button id='add'>
          <FiPlus/>
