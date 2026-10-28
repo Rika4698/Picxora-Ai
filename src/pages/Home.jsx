@@ -11,7 +11,8 @@ export function Home() {
   let {startRes, setStartRes} = useContext(dataContext);
 
   async function handleSubmit (e){
-
+    e.preventDefault();
+    setStartRes(true);
   }
   return (
     <div className="home">
