@@ -6,6 +6,7 @@ import { MdChatBubbleOutline } from 'react-icons/md'
 import { FiPlus } from 'react-icons/fi'
 import { FaArrowUpLong } from 'react-icons/fa6'
 import { dataContext } from '../context/UserContext'
+import Chat from './Chat'
 export function Home() {
 
   let {startRes, setStartRes} = useContext(dataContext);
@@ -22,7 +23,7 @@ export function Home() {
         </div>
       </nav>
 
-      <div className='hero'>
+      { !startRes ? <div className='hero'>
         <span id='tag'>What can I help with ?</span>
         <div className='cate'>
           <div className='upImg'>
@@ -39,6 +40,8 @@ export function Home() {
             </div>
         </div>
       </div>
+      : <Chat/>
+}
 
       <form className='input-box' onSubmit={(e) => handleSubmit(e)}>
 
