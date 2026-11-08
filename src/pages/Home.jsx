@@ -9,7 +9,7 @@ import { dataContext } from '../context/UserContext'
 import Chat from './Chat'
 export function Home() {
 
-  let {startRes, setStartRes} = useContext(dataContext);
+  let {startRes, setStartRes, popUp, setPopUp} = useContext(dataContext);
 
   async function handleSubmit (e){
     e.preventDefault();
