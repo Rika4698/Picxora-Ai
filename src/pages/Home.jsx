@@ -15,6 +15,8 @@ export function Home() {
     e.preventDefault();
     setStartRes(true);
   }
+
+  
   return (
     <div className="home">
       <nav>
