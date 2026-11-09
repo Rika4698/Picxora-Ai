@@ -47,7 +47,7 @@ export function Home() {
 
       <form className='input-box' onSubmit={(e) => handleSubmit(e)}>
 
-        <button id='add'>
+        <button id='add' onClick={() => { setPopUp(prev=>!prev)}}>
          <FiPlus/>
         </button>
 
