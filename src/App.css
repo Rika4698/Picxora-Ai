@@ -93,7 +93,7 @@ nav{
 #add, #submit{
     width: 60px;
     height: 60px;
-    border: 2px solid rgb(255, 255, 255, 0.297);
+    border: 2px solid rgba(255, 255, 255, 0.297);
     border-radius: 50px;
     background-color: rgb(11, 16, 17);
     color: white;
@@ -143,6 +143,21 @@ form input{
     border-radius: 20px;
     font-size: 20px;
 
+}
+
+.pop-up{
+    width: 200px;
+    height: 120px;
+    background-color: rgb(11, 16, 17);
+    border: 2px solid rgba(255, 255, 255, 0.175);
+    position: absolute;
+    bottom: 120px;
+    left: 15%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @media (max-width:500px) {
