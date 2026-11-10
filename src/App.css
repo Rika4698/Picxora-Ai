@@ -158,6 +158,18 @@ form input{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.select-up, .select-gen{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 @media (max-width:500px) {
