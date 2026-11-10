@@ -46,6 +46,18 @@ export function Home() {
 }
 
       <form className='input-box' onSubmit={(e) => handleSubmit(e)}>
+        <div className='pop-up'>
+          <div className='select-up'>
+           <RiImageAddLine/>
+         <span>Upload Image</span>
+          </div>
+
+          <div className='select-gen'>
+          <RiImageAiLine/>
+          <span>Generate Image</span>
+          </div>
+
+        </div>
 
         <button id='add' onClick={() => { setPopUp(prev=>!prev)}}>
          <FiPlus/>
