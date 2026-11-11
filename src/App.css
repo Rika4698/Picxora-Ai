@@ -169,7 +169,8 @@ form input{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
+    font-size: 17px;
 }
 
 @media (max-width:500px) {
