@@ -170,8 +170,13 @@ form input{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-size: 17px;
+    font-size: 16px;
 }
+
+.select-up:hover, .select-gen:hover{
+    background-color: rgba(240, 248, 255, 0.164);
+}
+
 
 @media (max-width:500px) {
     #tag{
