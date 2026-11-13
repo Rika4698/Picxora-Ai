@@ -177,7 +177,17 @@ form input{
     background-color: rgba(240, 248, 255, 0.164);
 }
 
+.select-gen svg{
+    color: rgb(7, 240, 11);
+    width: 25px;
+    height: 25px;
+}
 
+.select-gen svg{
+    color: rgb(7, 236, 240);
+    width: 25px;
+    height: 25px;
+}
 @media (max-width:500px) {
     #tag{
         font-size: 20px;
