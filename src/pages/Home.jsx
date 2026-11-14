@@ -59,9 +59,9 @@ export function Home() {
 
         </div>
 
-        <button id='add' onClick={() => { setPopUp(prev=>!prev)}}>
+        <div id='add' onClick={() => { setPopUp(prev=>!prev)}}>
          <FiPlus/>
-        </button>
+        </div>
 
         <input type="text" placeholder='Ask Something...' />
         <button id='submit'>

@@ -159,7 +159,7 @@ form input{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .select-up, .select-gen{
@@ -171,7 +171,10 @@ form input{
     justify-content: center;
     gap: 10px;
     font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
 }
+
 
 .select-up:hover, .select-gen:hover{
     background-color: rgba(240, 248, 255, 0.164);
