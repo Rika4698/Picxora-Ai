@@ -97,6 +97,10 @@ nav{
     border-radius: 50px;
     background-color: rgb(11, 16, 17);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 #add svg{
@@ -168,19 +172,19 @@ form input{
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 10px;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 20px;
     cursor: pointer;
 }
 
 
 .select-up:hover, .select-gen:hover{
-    background-color: rgba(240, 248, 255, 0.164);
+    background-color: rgba(240, 248, 255, 0.1);
 }
 
-.select-gen svg{
+.select-up svg{
     color: rgb(7, 240, 11);
     width: 25px;
     height: 25px;
