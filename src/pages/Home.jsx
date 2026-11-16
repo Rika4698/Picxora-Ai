@@ -12,7 +12,7 @@ export function Home() {
   let {startRes, setStartRes, popUp, setPopUp, input, setInput} = useContext(dataContext);
 
   async function handleSubmit (e){
-    e.preventDefault();
+    
     setStartRes(true);
   }
 
@@ -45,7 +45,8 @@ export function Home() {
       : <Chat/>
 }
 
-      <form className='input-box' onSubmit={(e) => handleSubmit(e)}>
+      <form className='input-box' onSubmit={(e) => { e.preventDefault();
+        if(input) {handleSubmit(e)}}}>
 
         {popUp?  <div className='pop-up'>
           <div className='select-up'>
