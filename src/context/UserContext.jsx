@@ -9,9 +9,11 @@ function UserContext({children}) {
   let [startRes, setStartRes] = useState(false);
   let [popUp, setPopUp] = useState(false);
   let [input, setInput] = useState("");
+  let [feature, setFeature] = useState("chat");
     let value = {
       startRes, setStartRes,
-      popUp,setPopUp, input, setInput
+      popUp,setPopUp, input, setInput,
+      feature, setFeature
 
     }
   return (
