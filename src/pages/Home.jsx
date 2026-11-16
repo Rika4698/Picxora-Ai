@@ -9,7 +9,7 @@ import { dataContext } from '../context/UserContext'
 import Chat from './Chat'
 export function Home() {
 
-  let {startRes, setStartRes, popUp, setPopUp} = useContext(dataContext);
+  let {startRes, setStartRes, popUp, setPopUp, input, setInput} = useContext(dataContext);
 
   async function handleSubmit (e){
     e.preventDefault();
@@ -65,11 +65,11 @@ export function Home() {
          <FiPlus/>
         </div>
 
-        <input type="text" placeholder='Ask Something...' />
-        <button id='submit'>
+        <input type="text" placeholder='Ask Something...' onChange={(e) => setInput(e.target.value)} value={input}/>
+        {input? <button id='submit'>
         <FaArrowUpLong/>
-        </button>
-
+        </button> : null}
+        
       </form>
     </div>
   )
