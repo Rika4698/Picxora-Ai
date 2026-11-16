@@ -113,6 +113,9 @@ nav{
     height: 25px;
 }
 
+#genImg{
+    color: rgb(7, 236, 240);
+}
 
 form input{
     max-width: 60%;

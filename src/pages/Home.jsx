@@ -9,7 +9,7 @@ import { dataContext } from '../context/UserContext'
 import Chat from './Chat'
 export function Home() {
 
-  let {startRes, setStartRes, popUp, setPopUp, input, setInput} = useContext(dataContext);
+  let {startRes, setStartRes, popUp, setPopUp, input, setInput, feature, setFeature} = useContext(dataContext);
 
   async function handleSubmit (e){
     
@@ -32,11 +32,11 @@ export function Home() {
          <RiImageAddLine/>
          <span>Upload Image</span>
           </div>
-          <div className='genImg'>
+          <div className='genImg' onClick={() => setFeature("genImg")}>
           <RiImageAiLine/>
           <span>Generate Image</span>
           </div>
-          <div className='chat'>
+          <div className='chat' onClick={()=> setFeature('chat')}>
             <MdChatBubbleOutline/>
             <span>Let's Chat</span>
             </div>
@@ -54,7 +54,7 @@ export function Home() {
          <span>Upload Image</span>
           </div>
 
-          <div className='select-gen'>
+          <div className='select-gen' onClick={() => setFeature("genImg")}>
           <RiImageAiLine/>
           <span>Generate Image</span>
           </div>
@@ -63,7 +63,8 @@ export function Home() {
        
 
         <div id='add' onClick={() => { setPopUp(prev=>!prev)}}>
-         <FiPlus/>
+          {feature == "genImg"? <RiImageAiLine id="genImg"/> :  <FiPlus/> }
+        
         </div>
 
         <input type="text" placeholder='Ask Something...' onChange={(e) => setInput(e.target.value)} value={input}/>
